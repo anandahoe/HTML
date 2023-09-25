@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DFormulários</title>
+</head>
+<body>
+    <h1>Formulários</h1>
+    <form method="get" autocomplete="on">
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email"><br>
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" id="senha"><br>
+        <button type="submit">Entrar</button>
+    </form>
+    <br><br><br>
+
+    <!-- Query string: ?chave=valor&chave2=valor -->
+    <form action="https://google.com.br/search" method="get">
+        <label for="pesquisa">Valor da pesquisa</label>
+        <input type="text" name="q" id="pesquisa">
+        <input type="submit" value="Pesquisar">
+    </form>
+    <br><br>
+
+    <form action="">
+        <label>
+            Data de nascimento
+            <input type="date" name="dataNascimento" min="1930-01-01" max="2023-09-25">
+        </label>
+        <br>
+        <label>
+            Hora de nascimento
+            <input type="time" name="horaNascimento">
+        </label>
+        <br>
+        <label>
+            Foto
+            <input type="file" name="foto" accept=".doc,.pdf">
+        </label>
+        <p>Escolha seu sexo:</p>
+        <label>
+            <input type="radio" name="sexo" value="masculino">Masculino
+        </label>
+        <label>
+            <input type="radio" name="sexo" value="feminino">Feminino
+        </label>
+
+    </form>
+</body>
+</html>
