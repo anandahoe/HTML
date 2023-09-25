@@ -9,7 +9,7 @@
     <h1>Formulários</h1>
     <form method="get" autocomplete="on">
         <label for="email">E-mail</label>
-        <input type="email" name="email" id="email"><br>
+        <input type="email" name="email" id="email" placeholder="exemplo@email.com"><br>
         <label for="senha">Senha</label>
         <input type="password" name="senha" id="senha"><br>
         <button type="submit">Entrar</button>
@@ -46,7 +46,30 @@
         <label>
             <input type="radio" name="sexo" value="feminino">Feminino
         </label>
+        <p>Selecione as linguagens que você conhece</p>
+        <label>
+            <input type="checkbox" name="C#">C#
+        </label>
+        <label>
+            <input type="checkbox" name="Java">Java
+        </label>
+        <label>
+            <input type="checkbox" name="Python">Python
+        </label>
 
+        <fieldset>
+            <legend>Endereço</legend>
+        <p>Selecione o estado:</p>
+        <label>
+            Estado
+            <select name="estado" id="">
+                <option value="" selected disabled>Selecione uma opção</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AM">Amazonas</option>
+            </select>
+        </label>
+        </fieldset>
     </form>
 </body>
 </html>
