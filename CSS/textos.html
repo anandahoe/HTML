@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textos</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fuggles&display=swap');
+        @font-face {
+            font-family: "FiraSans";
+            src: url("/Fira_Sans/FiraSans-Black.ttf");
+            src: url("/Fira_Sans/FiraSans-BlackItalic.ttf");
+            src: url("/Fira_Sans/FiraSans-Bold.ttf");
+            src: url("/Fira_Sans/FiraSans-ExtraLightItalic.ttf");
+        }
+
+        .text-align-right{
+            text-align: right;
+        }
+        .text-align-center{
+            text-align: center;
+        }
+        .text-decoration-overline{
+            text-decoration: overline;
+        }    
+        .text-decoration-underline{
+            text-decoration: underline 
+        } 
+        /* !important; - utilizado principalmente para biblioteca externas*/ 
+        .text-decoration-none{
+            text-decoration: none;
+            color: black;
+        } 
+        .text-transform-uppercase{
+            text-transform: uppercase;
+        }
+        .text-indent{
+            text-indent: 100px;
+        }
+        .letter-spacing{
+            letter-spacing: 5px;
+        }
+        .line-height{
+            line-height: 1.5;
+        }
+        .text-shadow{
+            text-shadow: 10px 10px 3px red;
+        }
+        .google-font{
+            font-family: 'Fuggles', cursive;
+            font-size: 40px;
+        }
+        .installed-font{
+            font-family: "FiraSans",Helvetica, sans-serif;
+            font-weight: blackitalic;
+        }
+        .text-overflow{
+            width: 200px;
+            border: 1px solid black;
+            text-overflow: ellipsis;
+            overflow: clip;
+            white-space: nowrap;
+        }
+        .columns{
+            column-count: 2;
+            column-gap: 4px;
+            column-rule-style: solid;
+            column-rule-color: red;
+            column-rule-width: 4px;
+        }
+        .writing-model{
+            writing-mode: vertical-lr;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estilos em textos</h1>
+
+    <h2>Alinhamento</h2>
+    <p class="text-align-right">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At, dolorem, tempora omnis laborum nemo vitae praesentium explicabo odit dolorum nulla unde, deleniti impedit sit magnam? Ratione ut cum asperiores sunt!
+    </p>
+    <p class="text-align-center">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At, dolorem, tempora omnis laborum nemo vitae praesentium explicabo odit dolorum nulla unde, deleniti impedit sit magnam? Ratione ut cum asperiores sunt!
+    </p>
+    <div class="text-align-center text-decoration-underline">
+        <h2>Testando Text-align</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At, dolorem, tempora omnis laborum nemo vitae praesentium explicabo odit dolorum nulla unde, deleniti impedit sit magnam? Ratione ut cum asperiores sunt!
+        </p>
+    </div>
+    <h2>Text decoration</h2>
+    <p><span class="text-decoration-overline">Lorem</span> ipsum <span class="text-decoration-underline">dolor</span> sit amet consectetur adipisicing elit.</p>
+    <a href="" class="text-decoration-none">Qualquer coisa</a>
+
+    <h2>Text Transform</h2>
+    <p class="text-transform-uppercase">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+    
+    <h2>Text Spacing</h2>
+    <p class="text-indent letter-spacing line-height">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius aspernatur vitae aperiam dolore, ea fuga velit! Quae voluptate officia voluptatibus rerum beatae delectus non aliquid, eligendi odio perferendis repellendus voluptatum?
+    </p>
+    <h2 class="text-shadow">Text Shadow</h2>
+
+    <h2>Font Family e Font Weight</h2>
+    <p class="google-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sunt, architecto laudantium ullam magnam quibusdam, voluptatem impedit, tempora esse maiores deleniti nam eaque iure dolores quia quae nemo? Aspernatur, in!</p>
+    <p class="installed-font">Fonte instalada</p>
+
+    <h2>Text Overflow</h2>
+    <p class="text-overflow">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    </p>
+
+    <h2>Colunas</h2>
+    <p class="columns">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui quae aliquid dolor, porro dolore voluptatum nostrum! Alias, optio necessitatibus qui numquam obcaecati recusandae hic id atque molestiae, temporibus est ipsam!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At ea veniam obcaecati itaque ut alias ducimus eos. Illum provident tempore laboriosam minima veniam sed adipisci? Praesentium quam reiciendis nulla amet!
+    </p>
+
+    <h2>Writing Model</h2>
+    <p class="writing-model">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+</body>
+</html>
